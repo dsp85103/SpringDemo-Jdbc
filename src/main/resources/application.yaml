@@ -1,0 +1,11 @@
+spring:
+    datasource:
+        url: jdbc:sqlserver://127.0.0.1:1433;databaseName=ContosoUniversity;sslProtocol=TLS;Encrypt=false
+        username: sa
+        password: Ver7CompleXPW
+        driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    jpa:
+        database-platform: org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+    port: 8081

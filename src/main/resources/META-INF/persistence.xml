@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+  <persistence-unit name="default">
+
+      <class>com.duotify.jdbcdemo.entity.CourseEntity</class>
+      <class>com.duotify.jdbcdemo.entity.CourseInstructorEntity</class>
+      <class>com.duotify.jdbcdemo.entity.DepartmentEntity</class>
+      <class>com.duotify.jdbcdemo.entity.EnrollmentEntity</class>
+      <class>com.duotify.jdbcdemo.entity.OfficeAssignmentEntity</class>
+      <class>com.duotify.jdbcdemo.entity.PersonEntity</class>
+      <class>com.duotify.jdbcdemo.entity.VwCourseStudentCountEntity</class>
+      <class>com.duotify.jdbcdemo.entity.VwCourseStudentsEntity</class>
+      <class>com.duotify.jdbcdemo.entity.VwDepartmentCourseCountEntity</class>
+      <properties>
+          <property name="hibernate.connection.url" value="jdbc:sqlserver://127.0.0.1:1433;database=ContosoUniversity"/>
+          <property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      </properties>
+  </persistence-unit>
+</persistence>
